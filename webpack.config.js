@@ -27,17 +27,12 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         loader: [
           MiniCSSExtractPlugin.loader,
-          {
-            loader: "css-loader",
-            options: {
-              url: false
-            }
-          },
+          "css-loader",
           "sass-loader"
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(jpg|jpeg|png|svg|gif)$/,
         use: [
           'file-loader',
         ],
@@ -50,6 +45,7 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       template: './public/index.html',
+      favicon: './public/favicon.ico',
       hash: true,
     }),
     new MiniCSSExtractPlugin({
