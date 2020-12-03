@@ -1,8 +1,13 @@
-// Initial
-@charset "UTF-8";
 
-// Font Family
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+// commons
+@import "./assets/sass/commons";
 
-// Reset
-@import "./assets/sass/_reset.scss";
+a {
+  font-size: 14px;
+  font-weight: $font-weight-semibold;
+  color: $color-gray-100;
+  box-sizing: border-box;
+  padding: $spacing-16 $spacing-32;
+  background-color: white;
+  border-radius: 12px;
+}

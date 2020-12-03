@@ -1,10 +1,10 @@
-import React from "react";
-import { render } from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import "./index.scss";
-import ExamplePage from "./pages/ExamplePage";
-import ExamplePage2 from "./pages/ExamplePage2";
+import './index.scss';
+import ExamplePage from './pages/ExamplePage';
+import ExamplePage2 from './pages/ExamplePage2';
 
 const App = () => (
   <BrowserRouter>
@@ -15,4 +15,4 @@ const App = () => (
   </BrowserRouter>
 );
 
-render(<App/>, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
