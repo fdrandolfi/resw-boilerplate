@@ -8,11 +8,11 @@ const outputDirectory = 'dist';
 module.exports = {
   entry: [
     'babel-polyfill',
-    './src/client/index.js'
+    './src/client/index.js',
   ],
   output: {
     path: path.join(__dirname, outputDirectory),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -20,16 +20,16 @@ module.exports = {
         test: /\.(jsx|js)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/,
         loader: [
           MiniCSSExtractPlugin.loader,
-          "css-loader",
-          "sass-loader"
-        ]
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.(jpg|jpeg|png|svg|gif)$/,
@@ -37,11 +37,11 @@ module.exports = {
           'file-loader',
         ],
       },
-    ]
+    ],
   },
   plugins: [
     new CleanWebpackPlugin([
-      outputDirectory
+      outputDirectory,
     ]),
     new HtmlWebpackPlugin({
       template: './public/index.html',
@@ -49,14 +49,14 @@ module.exports = {
       hash: true,
     }),
     new MiniCSSExtractPlugin({
-      filename: "styles.css",
-    })
+      filename: 'styles.css',
+    }),
   ],
   devServer: {
     port: 3000,
     open: true,
     proxy: {
-      '/api': 'http://localhost:8080'
-    }
+      '/api': 'http://localhost:8080',
+    },
   },
 };

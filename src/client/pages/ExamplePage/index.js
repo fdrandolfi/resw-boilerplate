@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import "./index.scss";
-import View from "../View";
-import ExampleComponent from "../../components/ExampleComponent";
+import './index.scss';
+import View from '../View';
+import ExampleComponent from '../../components/ExampleComponent';
 
 const ExamplePage = () => (
   <View
