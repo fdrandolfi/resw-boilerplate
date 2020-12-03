@@ -1,4 +1,4 @@
-lea![preview](./preview.png)
+![preview](./preview.png)
 
 # RESW Boilerplate
 
