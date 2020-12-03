@@ -1,3 +1,5 @@
+lea![preview](./preview.png)
+
 # RESW Boilerplate
 
 Template for Frontend with ReactJS, ExpressJS, SASS & Webpack.
@@ -16,6 +18,9 @@ Run `npm run start` for wake up server on `localhost:8080`.
 
 ### Watch
 Run `npm run watch` for wake up all servers & listen the builders for changes on realtime.
+
+### Linter
+Run `npm run lint` for scan all project and get standards-based code review.
 
 ---
 
